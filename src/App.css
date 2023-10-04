@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #141519;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Card Styles Start */
+.card-cont{
+  width: 415px;
+  max-width: 90vw;
+  border-radius: 25px;
+  background-color: #1e252f;
+  padding: 35px;
+}
+/* Card Styles End */
+
+
+/* Rating Component Styles Start */
+.icon-box{
+  width: 50px;
+  height: 50px;
+  background-color: #272e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.texts h1{
+  color:white;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.texts p{
+  font-size: 15px;
+  color: #9299a3;
+  line-height: 1.8;
+}
+
+.rating-btn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.button{
+  width: 50px;
+  height: 50px;
+  background-color: #262f38;
+  color: #868f98;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.button:hover{
+  background-color: #798696;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.activeButton{
+  background-color: #ff7312 !important;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.submit-btn{
+  width: 100%;
+  padding-block: 14px;
+  border-radius: 25px;
+  background-color: #ff7312;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: .5s ease-in-out;
+}
+
+.submit-btn:hover{
+  background-color: white;
+  color: #ff7312;
+}
+
+/* Rating Component Styles End */
+
+
+/* Thank You Component Styles Start */
+.img-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  margin-top: 30px;
+  background-color: #262f38;
+  color: #ff7312;
+  padding: 9px 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.thanks-texts{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.thanks-texts h1{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.thanks-texts p{
+  font-size: 15px;
+  color: #959ca6;
+  line-height: 1.8;
+}
+/* Thank You Component Styles End */
+
+
+@media (width < 400px){
+  .texts p{
+    text-align: justify;
   }
-  to {
-    transform: rotate(360deg);
+  .button{
+    width: 40px;
+    height: 40px;
   }
 }
